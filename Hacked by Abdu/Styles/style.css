@@ -1,0 +1,187 @@
+/* Fonts Link */
+* {
+    /* font-family: 'Montserrat', sans-serif; */
+    font-family: 'Poppins', sans-serif;
+
+    color: #111214;
+}
+/* Fonts Link */
+
+
+
+/* Flashing */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    color-scheme: dark;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+/* Flashing */
+
+
+
+/* Header */
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px 25px 0;
+}
+
+.title {
+    z-index: 1;
+    opacity: 1;
+    /* width: 88%; */
+    font-size: 34px;
+    background-image: linear-gradient(120deg, #ac89fe 0%, #d6113c 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /* animation: opacity-hack-color 10s linear forwards; */
+    text-shadow: 0 2px 6px #00000052;
+}
+
+.subtitle {
+    font-size: 20px;
+    font-weight: bold;
+    text-shadow: 0 2px 6px #00000070;
+    animation: opacity-hack-color 15s forwards;
+    /* filter: drop-shadow(0 0.px 0.px #ffffff); */
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 10px;        
+}
+
+.button {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    column-gap: 6px;
+    justify-content: center;
+    background-image: linear-gradient(72.44deg, #FF7A00 11.92%, #FF0169 51.56%, #D300C5 85.69%);
+    border: none;
+    border-radius: 8px;
+    padding: 8px 12px;
+    font-size: 18px;
+    margin: 10px 0;
+    color: #fff;
+    box-shadow: 0 6px 10px #0000006e;
+}
+
+.window {
+    position: relative;
+    display: flex;
+    width: 80%;
+    padding: 8px 12px;
+    background-color: rgba(0, 255, 0, 0.781);
+    box-shadow: 0 0px 8px #0000006e;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.at-icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 100%;
+    color: #fff;
+    background: #000;
+}
+
+.hack-content {
+    width: 200px;
+    display: flex;
+    justify-content: start;
+    padding: 0 35px;
+}
+
+.hacked-accounts h2 {
+    animation: opacity-hack-color 10s linear forwards;
+}
+
+.button .icon {
+    font-size: 18px;
+    color: #fff;
+}
+
+.icon {
+    color: none;
+    animation: color_animation 1s linear alternate infinite;
+}
+/* Header */
+
+
+
+/* Footer */
+.footer {
+    filter: drop-shadow(0 2px 6px #000);
+    color: #fff;
+    text-align: center;
+}
+
+.link {
+    color: #2793ff;
+    text-decoration: none;
+    text-shadow: 0 2px 6px #0000006c;
+}
+/* Footer */
+
+
+
+/* Canvas */
+#Matrix {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: -1000;
+    opacity: 0;
+    /* opacity: 0.8; */
+    animation: opacity-hack 15s forwards;
+}
+/* Canvas */
+
+
+
+/* Animations */
+@keyframes color_animation {
+    0% {
+        color: rgba(255, 0, 0, 0.322) !important; 
+    }
+
+    100% {
+        color: rgba(255, 0, 0, 0.664) !important; 
+    }
+}
+
+@keyframes opacity-hack {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes opacity-hack-color {
+    100% {
+        color: #fff;
+        text-shadow: 0 2px 6px #ffffffc2;
+    }
+}
+/* Animations */
